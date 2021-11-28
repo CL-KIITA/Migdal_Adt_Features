@@ -9,7 +9,7 @@ TODO: Delete this and the text above, and describe your gem
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'liquid-migdal_tags'
+gem 'liquid-migdal_tags', git: 'https://github.com/CL-KIITA/Migdal_Adt_Features', glob: 'liquid_migdal_tags/liquid-migdal_tags.gemspec'
 ```
 
 And then execute:
@@ -33,7 +33,7 @@ With
 ```ruby
 require "liquid/migdal_tags"
 
-Liquid::Template.register_tag 'language', LanguageIntent
+Liquid::Template.register_tag 'lang', LanguageIntent
 Liquid::Template.register_tag 'dart', dartpadIntent
 Liquid::Template.register_tag 'atoc', TOCBlock
 ```
@@ -56,7 +56,7 @@ Usage: 段落を追加する場合は、以下のタグを用います。ただ�
 
 ### Dartpad Intent(on dev)
 
-Web&Appを主な対象とするプログラミング言語であるDart言語(おすすめ！)のオンライン実行環境である[DartPad](https://dartpad.dev/?null_safety=　)に、予めコードを設定して共有できるようにしたものを埋め込むことができます。
+Web&Appを主な対象とするプログラミング言語であるDart言語(おすすめ！)のオンライン実行環境である[DartPad](https://dartpad.dev/)に、予めコードを設定して共有できるようにしたものを埋め込むことができます。
 
 [公式に示された手順](https://github.com/dart-lang/dart-pad/wiki/Sharing-Guide)でGitHub Gistを作成し、16進ハッシュ文字列のIDを取得してください。以下`id`にはこの文字列が入ります。
 
