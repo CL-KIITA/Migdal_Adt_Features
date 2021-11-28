@@ -34,7 +34,7 @@ With
 require "liquid/migdal_tags"
 
 Liquid::Template.register_tag 'lang', LanguageIntent
-Liquid::Template.register_tag 'dart', dartpadIntent
+Liquid::Template.register_tag 'dart', DartPadIntent
 Liquid::Template.register_tag 'atoc', TOCBlock
 ```
 
